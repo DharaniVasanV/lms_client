@@ -1,11 +1,10 @@
 /* index.css */
-span{
+/*span{
     color: blue;
     font-weight: bold;
 }
 h1{
-    font-style: italic;
-    text-decoration: underline;
+    font-weight:bold;
 }
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -37,4 +36,115 @@ h3{
 .Myname{
     text-align: center;
     animation: rotateWheel 5s linear infinite;
+}*/
+.container{
+    height: 94vh;
+    /*t r b l*/
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#signupForm{
+    border: 2px solid whitesmoke;
+    display: flex;/*inline-block is used to shrink the form to fit its content*/
+    align-items: flex-start;
+    flex-direction: column;
+    height: 390px;
+    padding: 45px 90px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: rgb(52, 56, 59);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+body{
+    background-image: url("https://img.freepik.com/premium-vector/modern-luxury-shiny-black-with-gold-lines-elegant-background_907220-1990.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+}
+label{
+    text-align: left;
+}
+input{
+    border-radius: 5px;
+    color:white;
+    width: 100%;
+    outline: none;
+}
+#signupForm button{
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:5px 10px;
+}
+/*login page css*/
+/*
+.login-container{
+    height: 94vh;
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+#loginForm{
+    text-align: center;
+    border: 4px solid black;
+    display: inline-block;/to shrink the form to fit its content/
+    padding: 80px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px;
+}*/
+/*header css*/
+.header-container{
+ border: 2px solid rgb(63, 69, 73);
+ border-radius: 40px;
+ margin-top: -70px;
+ margin-left: -10px;
+ width: calc(100% + 5px);
+ background-color: rgb(63, 69, 73);
+ position:fixed
+}
+.logo{
+    margin-left: 6px;
+    margin-top: 40px;
+}
+.head-container{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin-top: -40px;
+    margin-right: 20px;
+    gap:20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head-container p{
+    background-color: rgb(113, 115, 117);
+    padding: 10px;
+    border-radius:10px;
+}
+.header-container p:hover{
+    background-color: rgb(179, 190, 190);
+    cursor: pointer;
+}
+.head-container a{
+    color: white;
+}
+#logout:hover{
+    background-color: red;
 }
