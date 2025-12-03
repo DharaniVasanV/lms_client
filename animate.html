@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+    <header class="animate-header">
+    <div class="content">
+        <!--<h1 class="animate__animated animate__fadeInDown">Welcome to the Animated Page</h1>
+        <p class="animate__animated animate__fadeInUp">This page features a video background with animated text.</p>-->
+        <img src="https://www.nasa.gov/wp-content/uploads/2024/04/meatball.png" alt="NASA" class="animlogo">
+        <p>NATIONAL AERONAUTICS AND SPACE ADMINISTRATION</p>
+        <div class="content-items">
+        <Button id="home">Home</Button>
+        <Button id="about">About</Button>
+        <Button id="contact">Contact</Button>
+        <div id="contentToHome" class="hidden">
+            <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">About NASA</h1>
+            <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">NASA explores the unknown in air and space, leading the United States civil space program and aeronautics research. From studying Earth’s climate to probing distant galaxies, NASA’s missions seek to expand human knowledge and answer fundamental questions about our universe. Working with commercial and international partners, the agency operates spacecraft, telescopes, and the International Space Station to conduct cutting‑edge science and technology demonstrations. NASA also develops advanced aviation and spaceflight technologies that make air travel safer, more efficient, and more sustainable. Through education, outreach, and open data, NASA inspires students, innovators, and explorers around the world to participate in the journey of discovery.
+            </p>
+        </div>
+        <div id="contentToAbout" class="hidden">
+            This content will be shown or hidden.
+        </div>
+        <div id="contentToContact" class="hidden">
+            This content will be shown or hidden.
+        </div>
+        </div>
+    </div>
+    </header>
+    <video class="vi-bg" autoplay muted loop playsinline><!--playsinline is used to play the video in the screen without opening a another full screen-->
+        <source src="https://cdn.pixabay.com/video/2023/06/21/168193-838481303_large.mp4" type="video/mp4">
+    </video>
+    <footer class="animate-footer">
+    <div class="content2">
+        <p>@NASA Corporation copyrights reserved 2025.</p>
+    </div>
+    </footer>
+    <script>
+        const home = document.getElementById('home');
+        const contentToHome = document.getElementById('contentToHome');
+        const about = document.getElementById('about');
+        const contentToAbout = document.getElementById('contentToAbout');
+        const contact = document.getElementById('contact');
+        const contentToContact = document.getElementById('contentToContact');
+        
+        home.addEventListener('click', () => {
+            contentToHome.classList.toggle('hidden');
+        });
+        about.addEventListener('click', () => {
+            contentToAbout.classList.toggle('hidden');
+        });
+        contact.addEventListener('click', () => {
+            contentToContact.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -64,10 +64,6 @@ h3{
     color: white;
 }
 
-body{
-    background-image: url("https://img.freepik.com/premium-vector/modern-luxury-shiny-black-with-gold-lines-elegant-background_907220-1990.jpg?semt=ais_hybrid&w=740&q=80");
-    background-size: cover;
-}
 label{
     text-align: left;
 }
@@ -111,11 +107,11 @@ input{
 .header-container{
  border: 2px solid rgb(63, 69, 73);
  border-radius: 40px;
- margin-top: -70px;
+ margin-top: -180px;
  margin-left: -10px;
  width: calc(100% + 5px);
  background-color: rgb(63, 69, 73);
- position:fixed
+ position:fixed;
 }
 .logo{
     margin-left: 6px;
@@ -137,14 +133,35 @@ input{
     background-color: rgb(113, 115, 117);
     padding: 10px;
     border-radius:10px;
+    transition: 2s;
+    font-size: 17px;
 }
 .header-container p:hover{
     background-color: rgb(179, 190, 190);
     cursor: pointer;
+    font-size: 15px;
 }
 .head-container a{
     color: white;
 }
 #logout:hover{
     background-color: red;
+}
+#home .box{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcPRzUQYEjfvG9U_gHQbYFPZZvU2jel8V6eg&s");
+    width:210px;
+    height:200px;
+    margin-top: 110px;
+    margin-left: 200px;
+    background-position: center;
+    border-radius: 150px;
+    transition: 2s ;
+    /*display: grid;
+    grid-template-columns: 100px 100px auto;
+    grid-template-rows: 100px 100px;
+    gap:25px*/
+}
+#home .box:hover{
+    cursor: pointer;
+    transform: rotate(-360deg);
 }
